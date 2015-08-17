@@ -9,12 +9,14 @@
     ],
     "require": {
         "slim/slim": "^2.6",
-        "pimple/pimple": "~3.0"
+        "pimple/pimple": "~3.0",
+        "monolog/monolog": "~1.11"
     },
     "autoload": {
         "psr-4" : {
             "Warthog\\" : "src\\Warthog",
             "App\\" : "app\\"
-        }
+        },
+        "files": ["src/Warthog/Foundation/helpers.php"]
     }
 }
