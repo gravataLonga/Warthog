@@ -168,6 +168,11 @@ class Warthog extends Application {
                     $provider = $this->resolveProviderClass($provider);
                 }
                 $this->register($provider);
+
+                if(method_exists($provider, 'boot'))
+                {
+                    $provider->boot();
+                }
             }
 
             $this->boot = true;

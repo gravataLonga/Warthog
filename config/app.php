@@ -3,26 +3,26 @@
 return [
     
     'provider' => [
-        /**
-         * Application Service Provider
-         */
-        \Warthog\Log\Provider\LogServiceProvider::class,
-        \App\Provider\RoutingServiceProvider::class,
 
-        /**
-         * Applications Service Provider
-         * 
-         */
+        // System Service Provider
+
+        // Monolog
+        \Warthog\Log\Provider\LogServiceProvider::class,
+        // \App\Provider\RoutingServiceProvider::class,
+        \Warthog\Http\Provider\HttpServiceProvider::class,
+
+        // Application Service Provider
+
         \App\Provider\ApplicationServiceProvider::class,
     ],
 
     'log' => [
 
         // Debug level
-        'level' => 'debug',
+        'level'     => 'debug',
 
         // Name of file
-        'file'  => 'log.txt'
+        'filename'  => 'warthog.txt'
 
     ]
 

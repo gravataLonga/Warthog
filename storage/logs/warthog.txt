@@ -1,0 +1,2 @@
+[2016-02-26 22:08:38] warthog_system.DEBUG: Service Provider :: Slim ["Warthog\\Http\\Provider\\HttpServiceProvider"] []
+[2016-02-26 22:08:38] warthog_system.INFO: Application Start [] []

@@ -18,6 +18,6 @@ class ApplicationServiceProvider implements ServiceProviderInterface
         // register some services and parameters
         // on $pimple
 
-        $pimple['log']->addInfo('Testing Application');
+        $pimple['log']->addInfo('Application Start');
     }
 }
