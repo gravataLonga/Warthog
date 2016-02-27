@@ -20,4 +20,4 @@ class ApplicationServiceProvider implements ServiceProviderInterface
 
         $pimple['log']->addInfo('Application Start');
     }
-}
+} 
